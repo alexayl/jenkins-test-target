@@ -14,3 +14,7 @@ target_link_libraries(main PRIVATE motor)
 # Unit test executable
 add_executable(test_motor tests/test_motor.c)
 target_link_libraries(test_motor PRIVATE motor)
+
+enable_testing()
+
+add_test(NAME MotorTests COMMAND test_motor)
