@@ -5,6 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 # Add the motor library
 add_library(motor STATIC src/motor.c)
+target_include_directories(motor PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 # Main application
 add_executable(main src/main.c)
