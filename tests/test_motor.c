@@ -1,6 +1,5 @@
 #include <assert.h>
-
-int compute_rpm(int voltage);
+#include "motor.h"
 
 int main() {
     assert(compute_rpm(0) == 0);
